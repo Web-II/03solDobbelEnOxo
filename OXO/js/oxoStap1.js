@@ -17,8 +17,8 @@ function init() {
   const bord = new Spelbord();
   const imgElementen = document.getElementsByTagName('img');
   for (var img of imgElementen) {
-    img.onclick = function() {
-      bord.plaatsSymbool(this.id[0] - 1, this.id[1] - 1);
+    img.onclick = function () {
+      bord.plaatsSymbool('O', this.id[0] - 1, this.id[1] - 1);
       this.src = 'images/o.png';
     };
   }
